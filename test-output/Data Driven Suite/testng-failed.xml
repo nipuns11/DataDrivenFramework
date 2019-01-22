@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Data Driven Suite]">
-  <test name=" LoginTest(failed)">
+  <test name="Add csutomer test(failed)">
     <classes>
-      <class name="com.w2a.testcases.LoginTest">
+      <class name="com.w2a.testcases.AddCustomerTest">
         <methods>
           <include name="setUp"/>
+          <include name="addCustomer"/>
           <include name="tearDown"/>
-          <include name="loginAsbankManager"/>
         </methods>
-      </class> <!-- com.w2a.testcases.LoginTest -->
+      </class> <!-- com.w2a.testcases.AddCustomerTest -->
     </classes>
-  </test> <!--  LoginTest(failed) -->
+  </test> <!-- Add csutomer test(failed) -->
 </suite> <!-- Failed suite [Data Driven Suite] -->
