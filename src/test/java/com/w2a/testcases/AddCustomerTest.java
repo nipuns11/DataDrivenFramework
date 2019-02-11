@@ -6,6 +6,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -25,6 +26,9 @@ public class AddCustomerTest extends TestBase {
 		Assert.assertTrue(alert.getText().contains(alerttext));
 
 		alert.accept();
+		Reporter.log("customer test successfull");
+		Assert.fail("addcustomer test not successfull");
+		
 
 	}
 

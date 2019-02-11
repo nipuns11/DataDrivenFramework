@@ -17,7 +17,10 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.log4testng.Logger;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import com.w2a.Utilities.ExcelReader;
+import com.w2a.Utilities.ExtentManager;
 
 public class TestBase {
 
@@ -34,6 +37,8 @@ public class TestBase {
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
 	public static WebDriverWait wait;
+	public ExtentReports rep = ExtentManager.getInstance();
+	public static ExtentTest test;
 
 	@BeforeSuite
 	public void setUp() {
